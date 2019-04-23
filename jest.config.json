@@ -3,6 +3,7 @@
     "enzyme-to-json/serializer"
   ],
   "setupFiles": [
+    "raf/polyfil",
     "<rootDir>/src/tests/setupTests.js"
   ]
 }
