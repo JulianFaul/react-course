@@ -3,6 +3,24 @@ import { Link } from 'react-router-dom';
 import moment from 'moment';
 import numeral from 'numeral';
 
+numeral.register('locale', 'inr', {
+  delimiters: {
+    thousands: ',',
+    decimal: '.'
+  },
+  abbreviations: {
+    thousand: 'k',
+    million: 'm',
+    billion: 'b',
+    trillion: 't'
+  },
+  currency: {
+    symbol: 'R'
+  }
+});
+ 
+numeral.locale('inr');
+
 const ExpenseListItem = ({ id, description, amount, createdAt }) => (
   <Link className="list-item" to={`/edit/${id}`}>
     <div>
