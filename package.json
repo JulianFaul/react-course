@@ -63,8 +63,5 @@
   "bugs": {
     "url": "https://github.com/JulianFaul/react-course/issues"
   },
-  "engines": {
-    "node": "10.3.0"
-  },
   "homepage": "https://github.com/JulianFaul/react-course#readme"
 }
